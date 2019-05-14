@@ -1,5 +1,8 @@
 package concurrent_assignment4.A;
 
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * Remember to move the 'ass4_images' folder to the root directory
  * of your project,
@@ -15,10 +18,12 @@ package concurrent_assignment4.A;
 
 public class TrafficController {
 
-     
+    final ReentrantLock traffic = new ReentrantLock(true);
+    final Condition blues = traffic.newCondition();
+    final Condition reds = traffic.newCondition();
     
     public void redEnters() {
- 
+        
     }
 
     public  void blueEnters() {

@@ -20,11 +20,11 @@ class CarWorld extends JPanel {
         MediaTracker mt = new MediaTracker(this);
 	Toolkit toolkit = Toolkit.getDefaultToolkit();
 	
-        redCar = toolkit.getImage("ass4_images/redcar.gif");
+        redCar = toolkit.getImage("/home/walterus/NetBeansProjects/concurrent_assignment4/src/concurrent_assignment4/images/redcar.gif");
         mt.addImage(redCar, 0);
-        blueCar = toolkit.getImage("ass4_images/bluecar.gif");
+        blueCar = toolkit.getImage("/home/walterus/NetBeansProjects/concurrent_assignment4/src/concurrent_assignment4/images/bluecar.gif");
         mt.addImage(blueCar, 1);
-        bridge = toolkit.getImage("ass4_images/bridge1.gif");
+        bridge = toolkit.getImage("/home/walterus/NetBeansProjects/concurrent_assignment4/src/concurrent_assignment4/images/bridge1.gif");
         mt.addImage(bridge, 2);
 
         try {
